@@ -1,0 +1,165 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: #000718;
+}
+#section-wrapper{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+}
+.box-wrapper{
+    position: relative;
+    display: block;
+    width:890px;
+    margin:auto;
+    margin-top:35px;
+    border-radius: 30px;
+
+}
+.bg-box{
+    width:60%;
+    height: 505px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background: radial-gradient(circle, rgba(63,94,251,1)0%, rgba(251,70,107,1)100%);
+}
+.bg-box img{
+    width:100%;
+    height:100%;
+    padding: 30px;
+}
+.form-box{
+    width:40%;
+    height: 505px;
+    float: right;
+    padding:40px 35px 35px 35px;
+    border-radius: 0px 30px 30px 0px;
+    background: #ecf0f3;
+}
+
+.form-title{
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+.form-fields{
+    width: 100%;
+    padding: 30px 5px 5px 5px;
+}
+.form-fields input{
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 18px;
+    color:#555;
+    padding: 20px 10px 20px 5px;
+    width:100%
+}
+.form-group{
+    padding: 0px 30px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.fpass{
+    margin-bottom: 25px;
+    margin-top:-13px;
+    text-align: right;
+    font-size: 16px;
+}
+.fpass-btn{
+    cursor: pointer;
+}
+.fpass-btn:hover{
+    color: #f44771;
+}
+.submit-button{
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    text-align: center;
+    background: #f44771;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: .5s;
+}
+.submit-button:hover{
+    background: #1e7dfa;
+
+}
+.submit-button:active{
+    background: #0b63da;
+}
+.signin-here{
+    text-align: center;
+    font-size: 15px;
+    padding:10px;
+    margin-top: 7px;
+}
+.signin-here a{
+    text-decoration: none;
+}
+.signin-here a:hover{
+    color: red;
+}
+
+/* Popup box css */
+
+.fpass-popup-box{
+    position: absolute;
+    background: #ecf0f3;
+    padding:30px;
+    border-radius: 30px;
+    top: 100px;
+    left: 23%;
+    width: 550px;
+    box-shadow: 0px 0px 300px 100px #000718;
+    transform: scale(0);
+    transition: all .4s;
+}
+.close-btn{
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.form-sub-title{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive css */
+
+@media only screen and (max-width: 767px){
+    .box-wrapper{
+        width:100%;
+    }
+    .bg-box{
+        display: none;
+
+    }
+    .form-box{
+        width: 100%;
+        height: initial;
+        border-radius: 30px;
+    }
+    .fpass-popup-box{
+        width: 100%;
+        left: 0;
+    }
+}
