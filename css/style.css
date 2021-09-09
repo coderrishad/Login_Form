@@ -1,5 +1,4 @@
 *{
-    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,6 +7,7 @@
 
 body{
     background: #000718;
+    font-family: 'Roboto', sans-serif;
 }
 #section-wrapper{
     width: 100%;
